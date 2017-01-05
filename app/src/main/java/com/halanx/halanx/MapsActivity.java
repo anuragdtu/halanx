@@ -37,6 +37,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             }
         });
+        but2= (Button)findViewById(R.id.btnaccount);
+        but2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                Intent toy1 = new Intent(MapsActivity.this, Account.class);
+                startActivity(toy1);
+            }});
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
