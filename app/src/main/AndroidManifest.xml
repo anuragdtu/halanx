@@ -51,7 +51,8 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".rating" />
-        <activity android:name=".Account"></activity>
+        <activity android:name=".Account" />
+        <activity android:name=".last_rating"></activity>
     </application>
 
 </manifest>
