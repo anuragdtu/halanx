@@ -32,11 +32,11 @@
         <activity
             android:name=".register"
             android:label="Register"
-            android:parentActivityName="MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Signin"
             android:label="@string/title_activity_signin"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -54,7 +54,8 @@
             android:label="@string/title_activity_maps" />
         <activity android:name=".rating" />
         <activity android:name=".Account" />
-        <activity android:name=".last_rating"></activity>
+        <activity android:name=".last_rating" />
+        <activity android:name=".earning"></activity>
     </application>
 
 </manifest>
