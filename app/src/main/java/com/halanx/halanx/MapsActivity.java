@@ -23,21 +23,22 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    public Button but1,but2;
-    public void init()
-    {
-        but1= (Button)findViewById(R.id.btnrating);
-        but1.setOnClickListener(new View.OnClickListener()
-        {
+    Button but1,but2;
+    public void init() {
+        but1 = (Button) findViewById(R.id.btnrating);
+        but1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                Intent toy=new Intent(MapsActivity.this,rating.class);
+            public void onClick(View v) {
+                Intent toy = new Intent(MapsActivity.this, rating.class);
                 startActivity(toy);
 
             }
         });
-        but2= (Button)findViewById(R.id.btnaccount);
+
+    }
+    public void init2()
+    {
+        but2 = (Button) findViewById(R.id.btnaccount);
         but2.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -56,6 +57,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         init();
+        init2();
     }
 
 

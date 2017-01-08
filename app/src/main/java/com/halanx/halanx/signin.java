@@ -38,7 +38,7 @@ import static android.Manifest.permission.READ_CONTACTS;
 /**
  * A login screen that offers login via email/password.
  */
-public class signin extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+public class Signin extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
     /**
      * Id to identity READ_CONTACTS permission request.
@@ -274,7 +274,7 @@ public class signin extends AppCompatActivity implements LoaderCallbacks<Cursor>
     private void addEmailsToAutoComplete(List<String> emailAddressCollection) {
         //Create adapter to tell the AutoCompleteTextView what to show in its dropdown list.
         ArrayAdapter<String> adapter =
-                new ArrayAdapter<>(signin.this,
+                new ArrayAdapter<>(Signin.this,
                         android.R.layout.simple_dropdown_item_1line, emailAddressCollection);
 
         mEmailView.setAdapter(adapter);
@@ -335,7 +335,7 @@ public class signin extends AppCompatActivity implements LoaderCallbacks<Cursor>
 
             if (success) {
                 finish();
-                Intent toy3=new Intent(signin.this,MapsActivity.class);
+                Intent toy3=new Intent(Signin.this,MapsActivity.class);
                 startActivity(toy3);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));

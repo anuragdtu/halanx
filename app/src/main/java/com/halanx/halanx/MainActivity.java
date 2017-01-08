@@ -8,20 +8,21 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button but1,but2;
+    Button but1,but2;
     public void init()
     {
-        but1= (Button)findViewById(R.id.btnsignin);
-        but1.setOnClickListener(new View.OnClickListener()
-        {
+        but1 = (Button) findViewById(R.id.btnsignin);
+        but1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                Intent toy=new Intent(MainActivity.this,signin.class);
+            public void onClick(View v) {
+                Intent toy = new Intent(MainActivity.this, Signin.class);
                 startActivity(toy);
 
             }
         });
+    }
+    public void init2()
+    {
         but2= (Button)findViewById(R.id.btnregister);
         but2.setOnClickListener(new View.OnClickListener()
         {
@@ -39,5 +40,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
+        init2();
     }
 }

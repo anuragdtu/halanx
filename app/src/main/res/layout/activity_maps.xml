@@ -32,7 +32,8 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/map">
+    android:layout_below="@+id/map"
+    android:layout_alignParentEnd="true">
             <Button
                 android:text=""
                 android:layout_width="wrap_content"
@@ -67,7 +68,7 @@
                 android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button9"
+                android:id="@+id/btnaccount"
                 android:layout_alignParentBottom="true"
                 android:layout_weight="1"
                 android:layout_toEndOf="@+id/btnaccount"
