@@ -55,7 +55,10 @@
         <activity android:name=".rating" />
         <activity android:name=".Account" />
         <activity android:name=".last_rating" />
-        <activity android:name=".earning"></activity>
+        <activity android:name=".earning" />
+        <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2"></activity>
     </application>
 
 </manifest>

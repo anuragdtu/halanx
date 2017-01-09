@@ -23,7 +23,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    Button but1,but2;
+    Button but1,but2,but3;
     public void init() {
         but1 = (Button) findViewById(R.id.btnrating);
         but1.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +48,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }});
 
     }
+    public void init3()
+    {
+        but3=(Button)findViewById(R.id.btnearning);
+        but3.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                Intent toy2=new Intent(MapsActivity.this,earning.class);
+                startActivity(toy2);
+            }
+        }
+        );
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +71,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         init();
         init2();
+        init3();
     }
+
 
 
     /**
